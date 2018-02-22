@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">1DProject</string>
+    <string name="multilines">Line1Line1\nLine2Line2\nLine1Line2</string>
+</resources>

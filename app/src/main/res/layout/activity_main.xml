@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.liyang.a1d.MainActivity">
+
+    <TextView
+        android:id="@+id/destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Destination"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignRight="@+id/find_button"
+        android:layout_alignEnd="@+id/find_button" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/car"
+        android:layout_marginTop="172dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/destination"
+        android:layout_toStartOf="@+id/destination">
+    </ImageView>
+    <Button
+        android:id="@+id/find_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FIND"
+        android:onClick="onFind"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_alignBaseline="@+id/go"
+        android:layout_alignBottom="@+id/go"
+        android:layout_alignRight="@+id/go"
+        android:layout_alignEnd="@+id/go" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="find"
+        android:text="Select Carpark"
+        android:id="@+id/go"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_alignBaseline="@+id/simpleSwitch"
+        android:layout_alignBottom="@+id/simpleSwitch"
+        android:layout_toRightOf="@+id/simpleSwitch"
+        android:layout_toEndOf="@+id/simpleSwitch" />
+
+    <Switch
+        android:id="@+id/simpleSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Location "
+        android:checked="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
